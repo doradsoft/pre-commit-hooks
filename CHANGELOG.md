@@ -1,3 +1,9 @@
+5.0.0-doradsoft - 2025-04-15
+==================
+
+### Features
+- New hook: `check-json5` to validate JSON5 files using the `json5` python package. Checks for duplicate keys and syntax errors.
+
 5.0.0 - 2024-10-05
 ==================
 

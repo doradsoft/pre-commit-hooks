@@ -1,0 +1,7 @@
+// valid JSON5 with comments
+{
+  // this is a comment
+  a: 1,
+  b: 'hello', // trailing comma allowed
+  c: [1, 2, 3],
+}

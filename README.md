@@ -57,6 +57,21 @@ Check for files that cannot be created on Windows.
 #### `check-json`
 Attempts to load all json files to verify syntax.
 
+#### `check-json5`
+Attempts to load all json5 files to verify syntax (supports comments, trailing commas, etc.).
+
+- Checks for duplicate keys and invalid JSON5 syntax.
+- Uses the [json5](https://pypi.org/project/json5/) python package.
+
+Example usage in your `.pre-commit-config.yaml`:
+
+```yaml
+-   repo: https://github.com/doradsoft/pre-commit-hooks
+    rev: <branch-or-tag>
+    hooks:
+    -   id: check-json5
+```
+
 #### `check-merge-conflict`
 Check for files that contain merge conflict strings.
   - `--assume-in-merge` - Allows running the hook when there is no ongoing merge operation
